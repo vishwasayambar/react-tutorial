@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './components/Hello';
+import SaveButton from './components/SaveButton';
+import DynamicComponent from './components/DynamicComponent';
+import Cards from './components/Cards';
+// import {SaveButton} from './components/SaveButton';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <img src={logo} alt="React logo"/>
+      <h1>Hello World</h1>
+      <Hello/>
+      <DynamicComponent></DynamicComponent>
+      <SaveButton></SaveButton>
+      <Cards></Cards>
     </div>
   );
 }
