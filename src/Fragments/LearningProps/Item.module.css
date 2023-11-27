@@ -1,0 +1,24 @@
+.ui-bg{
+    background-color: aquamarine;
+}
+
+.li-text-color{
+    color: red;
+}
+
+/* Here we learn Css Module 
+Why is important ?
+->If we use only global compponent there is chances of getting class duplicate and also 
+when complex project  it gets difficut to find css is for what component
+
+How modle work and solved above problem?
+->It create name with component with .module.css suffix then we have import it in component like
+"import Itemcss from "./Item.module.css"  "  this you can take any "Itemcss" name instaed of this  "Itemcss" 
+
+and then use className={`${Itemcss['ui-bg']}` list-item } like this but here list-item has high priority becaue it reffer as inine due to bootstrap class 
+so use only like this className={`${Itemcss['ui-bg']}`} 
+
+How class name not get conflict to other global css file classes after compile the module css classes build like
+"Item_li-text-color__rp+oQ" like this means it attachend random string "__rp+oQ" suffix to each class to make it identical
+therefore we use this css module classes
+*/
