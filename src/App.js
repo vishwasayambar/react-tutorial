@@ -1,5 +1,6 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import Calculator from "./CalculatorProject/Calculator";
 import {
   CondentionalRendering,
   FragmentsMain,
@@ -8,6 +9,9 @@ import {
   TernaryOperator,
 } from "./Fragments/FragmetsMain";
 import Fruits from "./Fragments/LearningProps/Fruits";
+import Todoproject from "./TodoProject/Todoproject";
+import  ToDoProjectRevisionOne from "./TodoProjectRevisionOne/Todoproject";
+
 // import Hello from "./components/Hello";
 // import SaveButton from "./components/SaveButton";
 // import DynamicComponent from "./components/DynamicComponent";
@@ -29,7 +33,8 @@ function App() {
     */}
 
       {/*// To Do project one*/}
-      {/*<Todoproject />*/}
+      {/*
+      <Todoproject />*/}
 
       {/* Clock project */}
       {/*<ClockProject></ClockProject>*/}
@@ -41,9 +46,13 @@ function App() {
       <TernaryOperator></TernaryOperator>
       <LogicalOperator></LogicalOperator>*/}
 
-      {/* Learn How Props Work in React*/}
-      <Fruits></Fruits>
-      {/**/}
+      {/* Learn How Props Work in React
+      <Fruits></Fruits>*/}
+      
+
+       {/*// To Do project Revision One
+      <ToDoProjectRevisionOne />*/}
+      <Calculator/>
     </>
   );
 }
