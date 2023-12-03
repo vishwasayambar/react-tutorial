@@ -1,0 +1,12 @@
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn{
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid gray;
+}
