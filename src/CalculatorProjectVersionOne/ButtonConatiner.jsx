@@ -2,11 +2,11 @@ import style from "./ButtonContainer.module.css";
 
 let buttons = ['C','1','2','+','3','4','-','5','6','*','7','8','/','=','9','0','.']
 
-let ButtonContainer = () => {
+let ButtonContainer = ({onButtonClick}) => {
   return (
     <div className={style.buttons}>
         {buttons.map((button) => {
-            return  <button key={button} className={style.btn}>{button}</button>
+            return  <button key={button} className={style.btn} onClick={() => onButtonClick(button)}>{button}</button>
         })}
     </div>
   );
