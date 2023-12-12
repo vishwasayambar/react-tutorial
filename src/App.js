@@ -60,8 +60,11 @@ function App() {
         {/*Learning Passing pros as Children 
       <Main></Main> */}
 
-        {/*Learning Event Handling */}
-      <LearnEvents></LearnEvents>
+        {/*Learning Event Handling 
+      <LearnEvents></LearnEvents>*/}
+
+       {/*// Calculator Basic Project Version One Time 6:22*/}
+      <Calculator/>
     </>
   );
 }
