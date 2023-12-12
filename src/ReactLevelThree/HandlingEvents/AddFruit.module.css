@@ -1,0 +1,19 @@
+.inputBox{
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 1em 0;
+    padding: 0.2rem 1.2rem;
+    background-color: azure;
+    border: 0.1em solid gray;
+    border-radius: 1.1rem;
+}
+
+.addButton{
+    position: relative;
+    top: -3.3rem;
+    left: 27.3rem;
+    padding: 1px 17px;
+    border-radius: 1.1rem;
+    color: blue;
+    background-color: greenyellow;
+}

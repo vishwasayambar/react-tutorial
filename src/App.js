@@ -9,6 +9,8 @@ import {
   TernaryOperator,
 } from "./Fragments/FragmetsMain";
 import Fruits from "./Fragments/LearningProps/Fruits";
+import LearnEvents from "./ReactLevelThree/HandlingEvents/LearnEvents";
+import Main from "./ReactLevelThree/LearnPassingChildren/Main";
 import Todoproject from "./TodoProject/Todoproject";
 import  ToDoProjectRevisionOne from "./TodoProjectRevisionOne/Todoproject";
 
@@ -52,7 +54,14 @@ function App() {
 
        {/*// To Do project Revision One
       <ToDoProjectRevisionOne />*/}
-      <Calculator/>
+        {/*// Calculator Basic Project
+      <Calculator/>*/}
+
+        {/*Learning Passing pros as Children 
+      <Main></Main> */}
+
+        {/*Learning Event Handling */}
+      <LearnEvents></LearnEvents>
     </>
   );
 }
