@@ -4,6 +4,7 @@ import Calculator from "./CalculatorProjectVersionOne/Calculator";
 import TodoprojectUsingRefHook from "./Ch-28-34/TodoProjectUsingRefHook/Todoproject";
 import TodoprojectUsingContextApi from "./Ch-35-36(Context API)/TodoProjectRevisionTwo/TodoprojectUsingContextApi";
 import TodoprojectUsingUseReducer from "./Ch-35-36(useReducer Hook}/TodoProjectRevisionTwo/TodoprojectUsingUseReducer";
+import ClockProject from "./ClockProject/ClockProject";
 import {
   CondentionalRendering,
   FragmentsMain,
@@ -80,8 +81,11 @@ function App() {
        {/*// To Do project Revision Two
        <TodoprojectUsingContextApi />*/}
      
-       {/*// To Do project Revision Two*/}
-       <TodoprojectUsingUseReducer />
+       {/*// To Do project Reducer
+       <TodoprojectUsingUseReducer />*/}
+       
+       {/*// Bharat Clock Revision Two*/}
+       <ClockProject />
 
     </>
   );
