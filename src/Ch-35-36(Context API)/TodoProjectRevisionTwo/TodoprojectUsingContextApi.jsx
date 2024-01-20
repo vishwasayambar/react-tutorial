@@ -24,6 +24,17 @@ function TodoprojectUsingContextApi() {
     setToDoList(dummyArr);
   };
 
+  //Below is Use of useCallBack hook is mostly use to avoid multiple repaints after parent change 
+  //it actually only update when dependency array value get change is also work same like useEffect but it actually return the 
+  //same but this used to keep consistent function reference for child component
+  //it also improve performance by avoiding the unnecessary repiaints i preent previous result in memory
+  //mostly used in Infinite Loop in useEffect or any other places.
+  // const deleteToDoItem = useCallback((todoItem) => {
+  //   let dummyArr = toDoList.filter((item) => item.name !== todoItem.name);
+  //   setToDoList(dummyArr);
+  // },
+  // [setToDoList, toDoList]);
+
   return (
     <TodoItemContext.Provider value={{
       toDoList,
