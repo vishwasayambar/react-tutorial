@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Addtodo from "./Addtodo";
 import Heading from "./Heading";
 import ToDoItemList from "./ToDoItemList";
@@ -34,6 +34,17 @@ function TodoprojectUsingContextApi() {
   //   setToDoList(dummyArr);
   // },
   // [setToDoList, toDoList]);
+
+  // LEARN useMemo() Hook;
+  // Exmaple arr is in child component and tekan using props then the array is contais thousabds of value and i have to sort it in 
+  // child compoent and just wan to return value of sorted array then here problem is that whenever the parent get chnage the child also get chnage even though arr has not chnaged
+  // so it running complex calculatio again and again unnecessary to avoid this we use useMemo() hook it alsoo same as useCallback() but 
+  // useCallback() return a function or this returns only value there it used when we have eal with big calculation 
+  // and return only value it do same cache the result and ony chnage if dependency array get changed
+  // const arr = [2,4,6,7,8,9,0];
+  // const constsortedArray = arr.sort();
+  // const constsortedArray = useMemo(() => arr.sort(), [arr]);
+  
 
   return (
     <TodoItemContext.Provider value={{
